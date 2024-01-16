@@ -8,7 +8,6 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
 
 import ListItem from '@/components/NavigationMenu/ListItem.vue'
@@ -16,12 +15,10 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
 
-const defaultValue = 'item-1'
 
 
 const components: { title: string; href: string; description: string }[] = [
@@ -356,8 +353,7 @@ onMounted(async () => {
             <div type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r1j:"
               data-state="closed"><video class="rounded-xl" loop="" playsinline="" autoplay="">
                 <source
-                  src="https://tryotter.cdn.prismic.io/tryotter/ddb83192-f1d6-43fc-9a1c-6fa0fa406233_ROUGH1+wo+corners.mp4"
-                  type="video/mp4">
+                  src="https://tryotter.cdn.prismic.io/tryotter/ddb83192-f1d6-43fc-9a1c-6fa0fa406233_ROUGH1+wo+corners.mp4">
               </video>
 
             </div>
