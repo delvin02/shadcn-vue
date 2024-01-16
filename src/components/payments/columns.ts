@@ -1,7 +1,7 @@
 import type { ColumnDef } from '@tanstack/vue-table'
 import { h } from 'vue'
 import DropdownAction from '@/components/DataTableDropDown.vue'
-import { ArrowUpDown, ChevronDown } from 'lucide-vue-next'
+import { ArrowUpDown } from 'lucide-vue-next'
 import { Button } from '@/components/ui/button'
 import { Checkbox } from '@/components/ui/checkbox'
 

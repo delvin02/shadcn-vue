@@ -351,7 +351,7 @@ onMounted(async () => {
           <div
             class="BlockHero__VideoContainer-sc-yt9ijs-11 iOGMmC cursor-pointer mb-12 sm:mb-0 sm:max-w-[80%] relative">
             <div type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r1j:"
-              data-state="closed"><video class="rounded-xl" loop="" playsinline="" autoplay="">
+              data-state="closed"><video class="rounded-xl" loop playsinline autoplay>
                 <source
                   src="https://tryotter.cdn.prismic.io/tryotter/ddb83192-f1d6-43fc-9a1c-6fa0fa406233_ROUGH1+wo+corners.mp4">
               </video>
