@@ -353,7 +353,7 @@ onMounted(async () => {
             <div type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="radix-:r1j:"
               data-state="closed"><video class="rounded-xl" loop playsinline autoplay>
                 <source
-                  src="https://tryotter.cdn.prismic.io/tryotter/ddb83192-f1d6-43fc-9a1c-6fa0fa406233_ROUGH1+wo+corners.mp4">
+                  src="https://tryotter.cdn.prismic.io/tryotter/ddb83192-f1d6-43fc-9a1c-6fa0fa406233_ROUGH1+wo+corners.mp4" type="video/mp4">
               </video>
 
             </div>
