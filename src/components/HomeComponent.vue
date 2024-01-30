@@ -15,6 +15,7 @@ import {
   Card,
   CardContent,
   CardDescription,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
@@ -68,6 +69,12 @@ import { cn } from '@/lib/utils'
 
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from '@/components/ui/tabs'
 import { Textarea } from '@/components/ui/textarea'
 
 import { format } from 'date-fns'
@@ -429,12 +436,115 @@ onMounted(async () => {
 
   </Carousel>
 </div>
+<div class="my-10">
+  <div class="text-center  text-white font-sans">
+  <h1 class="text-4xl font-semibold">Is OneCore right for me?</h1>
+  <p class="text-white/50 font-semibold text-xl">Operating Seamlessly</p>
+  </div>
 
+  <div class="flex items-center justify-center space-x-2 my-10">
+    <Tabs default-value="account" class="relative w-full flex flex-col">
+      <TabsList class="grid w-auto mx-auto grid-cols-3">
+        <TabsTrigger value="account">
+          Realtime Sync
+        </TabsTrigger>
+        <TabsTrigger value="password">
+          Advanced Accounting Function
+        </TabsTrigger>
+        <TabsTrigger value="claims">
+          Subcontract/PO Claims
+        </TabsTrigger>
+      </TabsList>
+      <TabsContent value="account" >
+        <Card class="rounded-xl grid grid-cols-12 gap-4 min-w-[720px] mx-auto ">
+          <CardContent class="col-span-8 bg-cover overflow-hidden p-6">
+            <div class="h-auto rounded-xl overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1698397731622-614aff91b838?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="h-full w-auto object-cover" />
+            </div>
+          </CardContent>
+          <CardContent class="flex flex-col col-span-4 justify-between p-6">
+            <div>
+              <div class="text-5xl text-primary font-semibold mb-4">
+                <p>United Pacific</p>
+              </div>
+              <div class=" h5 mb-4 hanging-punctuation text-white/70">
+                <p>Our partnership [with Otter] has allowed us to effectively grow and manage our delivery business by
+                  enabling us to aggregate all of the delivery partners into a single platform.</p>
+              </div>
+              <div class="text-primary text-xs">
+                <p>Travis W</p>
+              </div>
+              <div class="text-white/70 text-xs">
+                <p>Division Manager, United Pacific</p>
+              </div>
+              <div class="grid grid-cols-2 gap-1 border-t border-grey-10 my-4 pt-4">
+                <div class="flex gap-3">
+                  <div class="text-xl text-primary min-w-[4.5ch]">44%</div>
+                  <div class="text-small text-white/70 max-w-[16ch]">↑ weekly orders</div>
+                </div>
+                <div class="flex gap-3">
+                  <div class="text-xl text-primary min-w-[4.5ch]">74%</div>
+                  <div class="text-small text-white/70 max-w-[16ch]">↓ order issues</div>
+                </div>
+                <div class="flex gap-3">
+                  <div class="text-xl text-primary min-w-[4.5ch]">22%</div>
+                  <div class="text-small text-white/70 max-w-[16ch]">↑ average basket size</div>
+                </div>
+                <div class="flex gap-3">
+                  <div class="text-xl text-primary min-w-[4.5ch]">25%</div>
+                  <div class="text-small text-white/70 max-w-[16ch]">↓ canceled orders</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a class="w-fit inline-block sm-down:w-full "
+                href="/blog/case-studies/delivering-sustainability-scalability-and-salads">
+                <button type="button"
+                  class="inline-flex items-center border border-foreground rounded-xl py-3 px-5 whitespace-nowrap bg-black sm-down:w-full font-InterDisplay"
+                  data-testid="csds-button">
+                  <div class="text-primary">
+                    <p class="text-left font-semibold">Read the case study
+                    </p>
+                  </div>
+                </button>
+              </a>
+            </div>
+          </CardContent>
+        </Card>
+      </TabsContent>
+      <TabsContent value="password">
+        <Card>
+          <CardHeader>
+            <CardTitle>Password</CardTitle>
+            <CardDescription>
+              Change your password here. After saving, you'll be logged out.
+            </CardDescription>
+          </CardHeader>
+          <CardContent class="space-y-2">
+            <div class="space-y-1">
+              <Label for="current">Current password</Label>
+              <Input id="current" type="password" />
+            </div>
+            <div class="space-y-1">
+              <Label for="new">New password</Label>
+              <Input id="new" type="password" />
+            </div>
+          </CardContent>
+          <CardFooter>
+            <Button>Save password</Button>
+          </CardFooter>
+        </Card>
+      </TabsContent>
+    </Tabs>
+  </div>
+</div>
 <div class="flex items-center space-x-2">
   <Carousel class="w-full flex flex-col" :opts="{ align: 'center' }">
     <div class="my-2">
-      <CarouselPrevious class="absolute -left-5 z-10 top-1/2 -translate-y-1/2 p-3 border border-primary" />
-      <CarouselNext class="absolute -right-5 z-10 top-1/2 -translate-y-1/2 p-3 border border-primary ml-1" />
+      <CarouselPrevious class="absolute -left-5 z-10 top-1/2 -translate-y-1/2 p-3 border border-primary bg-primary hover:bg-primary/95" />
+      <CarouselNext class="absolute -right-5 z-10 top-1/2 -translate-y-1/2 p-3 border border-primary ml-1 bg-primary hover:bg-primary/95" />
     </div>
     <CarouselContent>
       <CarouselItem v-for="(_, index) in 3" :key="index" class="basis-2/3 p-3">
