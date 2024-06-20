@@ -20,8 +20,6 @@ import {
   CardTitle,
 } from '@/components/ui/card'
 
-
-
 const components: { title: string; href: string; description: string }[] = [
   {
     title: 'OnecoreQBO',
